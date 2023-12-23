@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Suit Game</title>
+    
+</head>
+<body>
+    <audio hidden autoplay loop>
+        <source src="assets/audio/Phoebe Bridgers - Scott Street (Filtered Instrumental - No Vocals)_SqWmx0xSI7U.mp3" type="audio/mpeg" />
+    </audio>
+    <div>
+        <h1 class="skor" id="angka">Skor: </h1>
+        <button id="reset" onclick="reset()">RESET </button>
+
+    </div>
+    
+    <div id="apepe">
+        <div class="sumari">
+            <h1 class="title">Result Match</h1>
+            <br/>
+            <h1 id="proses">VS</h1>
+            <h1 id="hasil"></h1>
+        </div>
+        <div class="game">
+                <div class="fa-regular fa-hand opsi" onclick="opsiPick('\u270B')"></div>
+                <div class="fa-regular fa-hand-back-fist opsi" onclick="opsiPick('\u270A')"></div>
+                <div class="fa-regular fa-hand-scissors opsi" onclick="opsiPick('\u270C')"></div>
+        </div>
+
+    </div>
+    <script src="batu.js"></script>
+</body>
+</html>
